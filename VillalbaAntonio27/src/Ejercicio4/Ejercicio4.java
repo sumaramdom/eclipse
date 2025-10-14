@@ -12,13 +12,13 @@ public class Ejercicio4 {
 		double mediaUp;
 		double mediaDow;
 		System.out.println("nota de la primera asignatura");
-		nota1 = entradaTeclado.nextInt();
+		nota1 = entradaTeclado.nextDouble();
 		System.out.println("nota de la segunda asignatura");
-		nota2 = entradaTeclado.nextInt();
+		nota2 = entradaTeclado.nextDouble();
 		System.out.println("nota de la tercera asignatura");
-		nota3 = entradaTeclado.nextInt();
+		nota3 = entradaTeclado.nextDouble();
 		System.out.println("nota de la cuarta asignatura");
-		nota4 = entradaTeclado.nextInt();
+		nota4 = entradaTeclado.nextDouble();
 
 		media = (nota1+nota2+nota3+nota4)/4;
 		System.out.println("la nota media es:"+media);
@@ -28,7 +28,11 @@ public class Ejercicio4 {
 		System.out.println("la nota media truncada es:"+mediaDow);
 		
 		if (media>=8){
-			//me he quedado aqui
+			System.out.println("¡Usted puede acceder a estudios superiores!");
+			
+		}
+		else {
+			System.out.println("La nota obtenida no es suficiente para acceder a los estudios que deseaba");
 		}
 		
 		entradaTeclado.close();
