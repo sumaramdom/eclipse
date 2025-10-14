@@ -1,12 +1,11 @@
-package confiadeverdad;
+package buclesydemas;
 
 
 
 import java.util.Scanner;
-
+//while se ejecuta 0 o mas veces, el dowhile almenos 1 ya que pasa por el medio las ejecuciones y luego vuelve arriba
 public class confia {
 	public static void main (String args[])
-	//while se ejecuta 0 o mas veces, el dowhile almenos 1 ya que pasa por el medio las ejecuciones y luego vuelve arriba
 	{
 		Scanner entradaTeclado = new Scanner(System.in);
 		int inicio;

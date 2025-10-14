@@ -1,10 +1,10 @@
-package confiadeverdad;
+package buclesydemas;
 
 
 
 import java.util.Scanner;
 
-public class confia {
+public class dowhile {
 	public static void main (String args[])
 	//while se ejecuta 0 o mas veces, el dowhile almenos 1 ya que pasa por el medio las ejecuciones y luego vuelve arriba
 	{
@@ -12,8 +12,8 @@ public class confia {
 		int inicio;
 		int fin;
 		int numeroActual;
-		String letra;
-		letra = "";
+		String letra = ""; /*esto se hace para inicializarlo ya que de normal seria un valor nulo*/
+
 		
 		System.out.println("indique el primer numero");
 		inicio = entradaTeclado.nextInt();
@@ -23,23 +23,29 @@ public class confia {
 		if (inicio<fin) {
 		
 			numeroActual = inicio;
-			while (numeroActual != fin+1) {
-				
+			do {
 				letra = letra +" "+ numeroActual;
 				numeroActual++;
+			}while (numeroActual != fin+1) ;//se le suma uno ya que al dar el resultado lo lee antes de que llege al numero que deve llegar
+
 				
 				
-			}
+				
+				
+			
 		}
 		
 		else if (fin<inicio){
 			numeroActual = fin;
-			while (numeroActual != inicio+1) {
-				
+			do {
 				letra = letra +" "+ numeroActual;
 				numeroActual++;
-				
 			}
+			while (numeroActual != inicio+1);//se le suma uno ya que al dar el resultado lo lee antes de que llege al numero que deve llegar
+				
+			
+				
+			
 		}
 		else {
 			
